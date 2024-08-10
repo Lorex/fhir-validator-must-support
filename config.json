@@ -1,0 +1,5 @@
+{
+  "package": "tw.gov.mohw.twcore",
+  "version": "0.2.2",
+  "cachePath": "./ig_cache"
+}

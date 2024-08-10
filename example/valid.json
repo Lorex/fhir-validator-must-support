@@ -1,0 +1,67 @@
+{
+  "resourceType" : "Observation",
+  "id" : "obs-vital",
+  "meta" : {
+    "profile" : ["https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Observation-vitalSigns-twcore"]
+  },
+  "status" : "final",
+  "dataAbsentReason" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+      "code" : "not-asked",
+      "display" : "Not Asked"
+    }]
+  },
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs",
+      "display" : "Vital Signs"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "39156-5",
+      "display" : "Body mass index (BMI) [Ratio]"
+    }],
+    "text" : "Body mass index (BMI) [Ratio]"
+  },
+  "subject" : {
+    "reference" : "Patient/pat-example"
+  },
+  "effectiveDateTime" : "2022-07-31",
+  "performer" : [{
+    "reference" : "Practitioner/pra-dr-example"
+  }],
+  "valueQuantity" : {
+    "value" : 18.3,
+    "unit" : "kg/m2",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "kg/m2"
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "8331-1",
+            "display": "Body temperature"
+          }
+        ],
+        "text": "Body temperature"
+      },
+      "valueString": "N/A",
+      "dataAbsentReason": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+            "code": "not-asked",
+            "display": "Not Asked"
+          }
+        ]
+      }
+    }
+  ]
+}
