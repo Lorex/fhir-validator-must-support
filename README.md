@@ -4,6 +4,9 @@ This project is a simple tool to validate FHIR resources against the MustSupport
 
 Caution: This tool ONLY validates the "MustSupport" rules defined in the FHIR specification. It does NOT validate the other rules defined in the FHIR specification. Please consider using this tool to integrate with other FHIR validator to validate the FHIR resources.
 
+給新手用的傻瓜指引請點這裡：[README_ZH_NOOB.md](README_ZH_NOOB.md)
+For the guide for beginners, please click here: [README_ZH_NOOB.md](README_ZH_NOOB.md)
+
 ## Installation
 To use this tool, you need to have Node.js and Yarn Package Manager installed on your machine. You can download it from the following links:
 - [Node.js](https://nodejs.org/en/download/)
