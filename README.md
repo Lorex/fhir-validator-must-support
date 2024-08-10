@@ -1,6 +1,8 @@
 # fhir-validator-must-support
 
-This project is a simple tool to validate FHIR resources against the mustSupport rules defined in the FHIR specification.
+This project is a simple tool to validate FHIR resources against the MustSupport field defined in the FHIR specification.
+
+Caution: This tool ONLY validates the "MustSupport" rules defined in the FHIR specification. It does NOT validate the other rules defined in the FHIR specification. Please consider using this tool to integrate with other FHIR validator to validate the FHIR resources.
 
 ## Installation
 To use this tool, you need to have Node.js and Yarn Package Manager installed on your machine. You can download it from the following links:
